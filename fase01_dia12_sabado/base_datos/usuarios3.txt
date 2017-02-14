@@ -1,0 +1,108 @@
+Last login: Mon Feb 13 13:33:26 on ttys001
+CodeaCamp11s-Mac-mini:~ codea_mac_11$ cat << EOF > ~/.sqliterc
+> .headers on
+> .mode column
+> EOF
+CodeaCamp11s-Mac-mini:~ codea_mac_11$ sqlite3 ejemplo3.db
+-- Loading resources from /Users/codea_mac_11/.sqliterc
+
+SQLite version 3.8.10.2 2015-05-20 18:17:19
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE usuarios3(
+   ...>   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   ...>   nombre VARCHAR(64) NOT NULL,
+   ...>   apellido  VARCHAR(64) NOT NULL,
+   ...>   email VARCHAR(128) UNIQUE NOT NULL,
+   ...>   fecha_nacimiento DATETIME NOT NULL,
+   ...>   genero VARCHAR(10) NOT NULL,
+   ...>   apodo VARCHAR(64) NOT NULL,
+   ...> );
+Error: near ")": syntax error
+sqlite> CREATE TABLE usuarios3(
+   ...>   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   ...>   nombre VARCHAR(64) NOT NULL,
+   ...>   apellido  VARCHAR(64) NOT NULL,
+   ...>   email VARCHAR(128) UNIQUE NOT NULL,
+   ...>   fecha_nacimiento DATETIME NOT NULL,
+   ...>   genero VARCHAR(10) NOT NULL,
+   ...>   apodo VARCHAR(64) NOT NULL
+   ...> );
+sqlite> INSERT INTO usuarios3
+   ...>  (nombre, apellido, email, fecha_nacimiento, genero)
+   ...>  VALUES
+   ...>  ('Carlos', 'Ribero', 'carlos@gmail.com', '1970-11-03', 'masculino');
+Error: NOT NULL constraint failed: usuarios3.apodo
+sqlite> INSERT INTO usuarios3
+   ...>  (nombre, apellido, email, fecha_nacimiento, genero, apodo)
+   ...>  VALUES
+   ...>  ('Carlos', 'Ribero', 'carlos@gmail.com', '1970-11-03', 'masculino');
+Error: 5 values for 6 columns
+sqlite> INSERT INTO usuarios3
+   ...>  (nombre, apellido, email, fecha_nacimiento, genero, apodo)
+   ...>  VALUES
+   ...>  ('Carlos', 'Ribero', 'carlos@gmail.com', '1970-11-03', 'masculino', 'noes');
+sqlite> SELECT * FROM usuarios3;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Ribero      carlos@gmail.com  1970-11-03        masculino   noes      
+sqlite> INSERT INTO usuarios3
+   ...>  (nombre, apellido, email, fecha_nacimiento, genero, apodo)
+   ...>  VALUES 
+   ...>  ('Angel', 'Ribero', 'carlos@yahoo.com', '1970-11-03', 'masculino', ' ');
+sqlite> SELECT * FROM usuarios3;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Ribero      carlos@gmail.com  1970-11-03        masculino   noes      
+2           Angel       Ribero      carlos@yahoo.com  1970-11-03        masculino             
+sqlite> UPDATE usuarios3
+   ...>  SET apodo = 'Charly'
+   ...>  WHERE id = 1
+   ...> SELECT * FROM usuarios3;
+Error: near "SELECT": syntax error
+sqlite>   UPDATE usuarios3
+   ...>  SET apodo = 'Charly'
+   ...>  WHERE nombre = Carlos
+   ...> SELECT * FROM usuarios3;
+Error: near "SELECT": syntax error
+sqlite> .schema
+CREATE TABLE usuarios3(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre VARCHAR(64) NOT NULL,
+  apellido  VARCHAR(64) NOT NULL,
+  email VARCHAR(128) UNIQUE NOT NULL,
+  fecha_nacimiento DATETIME NOT NULL,
+  genero VARCHAR(10) NOT NULL,
+  apodo VARCHAR(64) NOT NULL
+);
+sqlite> SELECT * FROM usuarios3;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Ribero      carlos@gmail.com  1970-11-03        masculino   noes      
+2           Angel       Ribero      carlos@yahoo.com  1970-11-03        masculino             
+sqlite>  UPDATE usuarios3
+   ...>  SET apodo = 'Charly'
+   ...>  WHERE nombre = Carlos;
+Error: no such column: Carlos
+sqlite> UPDATE usuarios3
+   ...>  SET apodo = 'Charly'
+   ...>  WHERE nombre = 'Carlos';
+sqlite> SELECT * FROM usuarios3;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Ribero      carlos@gmail.com  1970-11-03        masculino   Charly    
+2           Angel       Ribero      carlos@yahoo.com  1970-11-03        masculino             
+sqlite>  .schema
+   ...>  .schema
+   ...> UPDATE usuarios3
+   ...> SET apellido = 'Rivera', fecha_nacimiento = '1980-11-03'
+   ...> WHERE nombre = 'Carlos';
+Error: near ".": syntax error
+sqlite> UPDATE usuarios3
+   ...> SET apellido = 'Rivera', fecha_nacimiento = '1980-11-03'
+   ...> WHERE nombre = 'Carlos';
+sqlite> SELECT * FROM usuarios3;
+id          nombre      apellido    email             fecha_nacimiento  genero      apodo     
+----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           Carlos      Rivera      carlos@gmail.com  1980-11-03        masculino   Charly    
+2           Angel       Ribero      carlos@yahoo.com  1970-11-03        masculino             
+sqlite> 

@@ -1,0 +1,52 @@
+sqlite3 ejemplo3.db
+
+
+CREATE TABLE usuarios3(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre VARCHAR(64) NOT NULL,
+  apellido  VARCHAR(64) NOT NULL,
+  email VARCHAR(128) UNIQUE NOT NULL,
+  fecha_nacimiento DATETIME NOT NULL,
+  genero VARCHAR(10) NOT NULL,
+  apodo VARCHAR(64) NOT NULL
+);
+
+
+INSERT INTO usuarios3
+ (nombre, apellido, email, fecha_nacimiento, genero, apodo)
+ VALUES
+ ('Carlos', 'Ribero', 'carlos@gmail.com', '1970-11-03', 'masculino', 'noes');
+
+SELECT * FROM usuarios3;
+
+INSERT INTO usuarios3
+ (nombre, apellido, email, fecha_nacimiento, genero, apodo)
+ VALUES 
+ ('Angel', 'Ribero', 'carlos@yahoo.com', '1970-11-03', 'masculino', ' ');
+
+
+ Vamos a agregar la columna apodo a nuestra tabla de usuarios. Busca documentación de la sentencia ALTER para poder realizar esto. La columna apodo debe tener tipo VARCHAR(64) y ser obligatorio (NOT NULL).
+
+ ALTER TABLE usuarios2
+ ADD apodo VARCHAR(64) NOT NULL;
+
+ ALTER TABLE usuarios2
+ UPDATE apodo Charlie;
+ 
+ UPDATE usuarios2 SET apodo = 'Charly' WHERE ID = 1
+ 
+ UPDATE usuarios3
+ SET apodo = 'Charly'
+ WHERE nombre = 'Carlos';
+
+UPDATE usuarios3
+SET apellido = 'Rivera', fecha_nacimiento = '1980-11-03'
+WHERE nombre = 'Carlos';
+
+
+
+
+
+
+
+

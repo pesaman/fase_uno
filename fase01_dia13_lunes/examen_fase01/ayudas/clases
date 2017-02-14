@@ -1,0 +1,25 @@
+#Clase CreditCard
+...
+
+
+#Cinco instancias de CreditCard
+...
+
+#Array con cinco objetos de tarjetas de crédito
+...
+
+
+#tests 
+
+cards.each do |card|
+   puts "#{card.name} responds to:"
+   puts "\tName: #{card.respond_to?(:name) == true}"
+   puts "\tNumber: #{card.respond_to?(:number) == true}"
+   puts "\tExpiration: #{card.respond_to?(:expiration) == true}"
+   puts "\tcvc: #{card.respond_to?(:cvc) == true}"
+   puts "\tGet status: #{card.respond_to?(:status) == true}"
+   puts "\tSet status: #{card.respond_to?(:status=) == true}"
+   puts "\n\n"
+end
+
+#método para mostrar datos de tarjetas
