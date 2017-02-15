@@ -1,0 +1,196 @@
+cat << EOF > ~/.sqliterc
+.headers on
+.mode column
+EOF
+
+$ sqlite3 EssentialSQL.db 
+
+SELECT * FROM Customers;
+
+SELECT * FROM OrderDetails;
+
+SELECT * FROM Orders;
+
+
+SELECT CustomerID,OrderID FROM Orders;
+
+
+SELECT DISTINCT CustomerID,OrderID FROM Orders;
+
+
+SELECT OrderID FROM Orders;
+
+
+SELECT COUNT(*)
+FROM Orders
+WHERE CustomerID  = 3;
+
+
+
+SELECT COUNT(*)
+FROM Orders, Customers
+WHERE Orders.CustomerID  = Customers.CustomerID
+
+
+SELECT Orders.OrderID, Customers.ContactName
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID;
+
+
+
+SELECT COUNT(*), Orders.OrderID, Customers.ContactName
+FROM Orders
+INNER JOIN Customers.
+ON Orders.CustomerID=Customers.CustomerID;
+
+
+SELECT COUNT(*), Orders.OrderID, Customers.ContactName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+WHERE ContactName = 'Jim Wood'
+GROUP BY Orders.OrderID, Customers.ContactName;
+
+
+SELECT * FROM Orders.OrderID, Customers.ContactName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID
+WHERE ContactName = Jim Wood
+GROUP BY Orders.OrderID, Customers.ContactName;
+
+
+
+SELECT COUNT(*), Orders.OrderID, Customers.ContactName
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+WHERE ContactName = 'Jim Wood';
+
+
+
+SELECT COUNT(*)
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+WHERE ContactName = 'Jim Wood';
+
+
+SELECT COUNT(*)
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+WHERE CompanyName = 'Slots Carpet';
+
+
+SELECT COUNT(*) Orders.OrderID, Customers.ContactName
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+WHERE CompanyName = 'Slots Carpet';
+
+ SELECT COUNT(*), Customers.CompanyName
+ FROM Orders
+ INNER JOIN Customers 
+ ON Orders.CustomerID=Customers.CustomerID
+ WHERE CompanyName;
+
+
+ALTER TABLE Customers ADD TotalOrders CHAR(20) DEFAULT '0' NOT NULL
+
+
+
+DELETE FROM Customers
+WHERE TotalOrders='0';
+
+
+SELECT COUNT(*), Orders.OrderID, Customers.CompanyName
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+WHERE CompanyName = 'Slots Carpet';
+
+
+SELECT COUNT(*) AS TotalOrders FROM Orders.OrderID, Customers.CompanyName
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID;
+WHERE CompanyName = 'Slots Carpet';
+
+SELECT COUNT(OrderID) AS TotalOrders FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+WHERE CompanyName = 'Slots Carpet';
+
+
+
+
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders
+ON Customers.CustomerID=Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
+
+SELECT Customers.CompanyName, COUNT(Orders.OrderID) AS TotalOrders FROM Orders
+LEFT JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+GROUP BY CompanyName
+ORDER BY TotalOrders DESC;
+
+
+SELECT Customers.CompanyName, COUNT(Orders.OrderID) AS TotalOrders FROM Orders
+LEFT JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+GROUP BY CompanyName
+ORDER BY TotalOrders ASC;
+
+#6
+SELECT Customers.CompanyName, SUM(Orders.OrderID) AS TotalOrders FROM Orders
+LEFT JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+GROUP BY CompanyName
+ORDER BY TotalOrders ASC;
+#6 funciona
+SELECT Customers.CompanyName,COUNT(Orders.OrderID) AS TotalOrders FROM Orders
+LEFT JOIN Customers 
+ON Orders.CustomerID=Customers.CustomerID
+GROUP BY CompanyName
+ORDER BY TotalOrders DESC
+LIMIT 1;
+
+#7
+
+SELECT Customers.CompanyName, SUM(OrderDetails.Quantity) AS QUANTITY FROM OrderDetails 
+LEFT JOIN Orders
+ON OrderDetails.OrderID = Orders.OrderID
+LEFT JOIN Customers
+ON Orders.CustomerID=Customers.CustomerID
+GROUP BY CompanyName
+ORDER BY QUANTITY DESC;
+
+#8
+SELECT OrderDetails.OrderID ,(Quantity *  UnitPrice) AS Amount
+FROM OrderDetails
+WHERE OrderID OrderID= 4;
+
+#9
+SELECT Orders.OrderID, SUM(Quantity *  UnitPrice) AS Amount  FROM OrderDetails 
+LEFT JOIN Orders
+ON OrderDetails.OrderID = Orders.OrderID
+GROUP BY Orders.OrderID
+ORDER BY Orders.OrderID ASC;
+
+#10
+SELECT Orders.OrderID, SUM(Quantity *  UnitPrice) AS Amount  FROM OrderDetails 
+LEFT JOIN Orders
+ON OrderDetails.OrderID = Orders.OrderID
+GROUP BY Orders.OrderID
+HAVING Amount > 1000;
+
+#11
+SELECT Orders.OrderID, SUM(Quantity) AS TotalItems  FROM OrderDetails 
+LEFT JOIN Orders
+ON OrderDetails.OrderID = Orders.OrderID
+GROUP BY Orders.OrderID
+ORDER BY Orders.OrderID ASC;
+
+
