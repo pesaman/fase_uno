@@ -1,0 +1,1061 @@
+cd cdsLast login: Mon Feb 20 12:34:47 on ttys000
+ktoCodeaCamp11s-Mac-mini:~ codea_mac_11$ cd cdsktop
+-bash: cd: cdsktop: No such file or directory
+CodeaCamp11s-Mac-mini:~ codea_mac_11$ cd desktop
+CodeaCamp11s-Mac-mini:desktop codea_mac_11$ cd fase01/
+CodeaCamp11s-Mac-mini:fase01 codea_mac_11$ ls
+async_comments.zip	fase01_dia13_lunes.zip	to_dos
+chefs.db		fase01_dia14_martes	to_dos.zip
+examen_flights.zip	fase01_dia14_martes.zip	user_schema
+fase01_dia12_sabado	flight			user_schema.zip
+fase01_dia13_lunes	mini_active_record
+CodeaCamp11s-Mac-mini:fase01 codea_mac_11$ cd flight/
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ la
+-bash: la: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ls
+Gemfile		Rakefile	config		flight.rb	users
+Gemfile.lock	app		db		spec
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos f
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos f
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos f
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:10:in `menu': undefined local variable or method `option' for #<Controller:0x007ff225bac448 @view=#<View:0x007ff225bac420>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `index': undefined local variable or method `tasks' for #<Controller:0x007f8491bf1ae0 @view=#<View:0x007f8491bf1ab8>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `index': undefined local variable or method `tasks' for #<Controller:0x007f8303c74560 @view=#<View:0x007f8303c74538>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+#<ActiveRecord::Relation [#<User id: 1, name: "Luciano", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 2, name: "Juanito", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 3, name: "Panchito", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 4, name: "Antonio", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 5, name: "Salvador", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 6, name: "Luciano", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 7, name: "Juanito", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 8, name: "Panchito", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 9, name: "Antonio", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 10, name: "Salvador", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">]>
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:19:in `index': undefined local variable or method `task' for #<Controller:0x007f9fc24887f8 @view=#<View:0x007f9fc24887d0>> (NameError)
+Did you mean?  tasks
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:19:in `index': undefined local variable or method `task' for #<Controller:0x007faa2432c5f0 @view=#<View:0x007faa2432c5c8>> (NameError)
+Did you mean?  tasks
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `index': undefined local variable or method `tasks' for #<Controller:0x007f8fed27d3f8 @view=#<View:0x007f8fed27d3d0>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined local variable or method `args' for #<Controller:0x007f9a011c1f18 @view=#<View:0x007f9a011c1ec8>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined local variable or method `args' for #<Controller:0x007fdd448ae6b0 @view=#<View:0x007fdd448ae688>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined local variable or method `args' for #<Controller:0x007f95fb79ba10 @view=#<View:0x007f95fb79b9e8>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb indexç
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined local variable or method `args' for #<Controller:0x007f995c2c8ad8 @view=#<View:0x007f995c2c8ab0>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:8:in `menu': undefined local variable or method `args' for #<Controller:0x007f8dba3b0890 @view=#<View:0x007f8dba3b0868>> (NameError)
+Did you mean?  argss
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:8:in `menu': undefined local variable or method `args' for #<Controller:0x007fc800c2b1c0 @view=#<View:0x007fc800c2b198>> (NameError)
+Did you mean?  argss
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+#<ActiveRecord::Relation [#<User id: 1, name: "Luciano", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 2, name: "Juanito", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 3, name: "Panchito", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 4, name: "Antonio", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 5, name: "Salvador", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 6, name: "Luciano", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 7, name: "Juanito", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 8, name: "Panchito", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 9, name: "Antonio", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 10, name: "Salvador", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">]>
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+#<ActiveRecord::Relation [#<User id: 1, name: "Luciano", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 2, name: "Juanito", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 3, name: "Panchito", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 4, name: "Antonio", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 5, name: "Salvador", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:40:34", updated_at: "2017-02-20 20:40:34">, #<User id: 6, name: "Luciano", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 7, name: "Juanito", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 8, name: "Panchito", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 9, name: "Antonio", email: "eduardho@gmail.com", admin: "Juanito", password: "123", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">, #<User id: 10, name: "Salvador", email: "eduardo@gmail.com", admin: "Lucian", password: "123456", created_at: "2017-02-20 20:41:23", updated_at: "2017-02-20 20:41:23">]>
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `index': undefined local variable or method `tasks' for #<Controller:0x007fa482cf04a8 @view=#<View:0x007fa482cf0480>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `index': undefined local variable or method `args' for #<Controller:0x007fd474434450 @view=#<View:0x007fd474434428>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `index': undefined local variable or method `args' for #<Controller:0x007fc86ca60220 @view=#<View:0x007fc86ca601f8>> (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:18:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:18:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:18:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:18:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:18:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+""
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+""
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb index
+ç^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A""
+["index"]
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+["bienvenidos"]
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+""
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu': undefined method `index' for #<Controller:0x007f9ad4bedc48 @view=#<View:0x007f9ad4bedc20>> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `bienvenidos': undefined method `bienvenidos' for #<View:0x007f826b33bcc0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+["bienvenidos"]
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+""
+["bienvenidos"]
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+""
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+""
+"bienvenidos"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+""
+"bienvenidos"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+""
+"bienvenidos"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined method `index' for #<View:0x007f8f92a30038> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined method `index' for #<View:0x007f8539be1a20> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"bienvenidos"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"bienvenidos"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+"Selecciona opción:"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+"Selecciona opción:"
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:14:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:14:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:14:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+"Selecciona opción:"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+"Selecciona opción:"
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+"Selecciona opción:"
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:14:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:14:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:14:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+In which city do you stay?
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+In which city do you stay?
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+In which city do you stay?
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+In which city do you stay?
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ l
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+In which city do you stay?
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:16:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `gets': No such file or directory @ rb_sysopen - bienvenidos (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': undefined local variable or method `targs' for #<View:0x007ff18c390640> (NameError)
+Did you mean?  args
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': undefined local variable or method `targs' for #<View:0x007f86033caa10> (NameError)
+Did you mean?  args
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': undefined local variable or method `targs' for #<View:0x007fa5fc8ce930> (NameError)
+Did you mean?  args
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': undefined local variable or method `targs' for #<View:0x007fd06c6a8210> (NameError)
+Did you mean?  args
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': uninitialized constant View::Bienvenido (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': uninitialized constant View::Bienvenido (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': uninitialized constant View::Bienvenido (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `index': uninitialized constant View::Bienvenido (NameError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu': undefined method `index' for #<Controller:0x007fba24084e78 @view=#<View:0x007fba24084e50>> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:19:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:19:in `index': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb delete
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:28:in `delete': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:13:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb delete
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:28:in `delete': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:13:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined method `index' for #<View:0x007fccdb550488> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined method `index' for #<View:0x007f87c2d83dc0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `index': undefined method `index' for #<View:0x007ff80300eaf8> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:22:in `index': undefined method `index' for #<View:0x007fc733a38c78> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:22:in `index': undefined method `index' for #<View:0x007f834180d9c0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb administrador
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:22:in `index': undefined method `index' for #<View:0x007fc31249a2a0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:22:in `index': undefined method `index' for #<View:0x007f7fbc3924a0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:22:in `index': undefined method `index' for #<View:0x007fb4b4276008> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:22:in `index': undefined method `index' for #<View:0x007fb0d42eefa0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:16:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ mostrar_menu 
+-bash: mostrar_menu: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `mostrar_menu': undefined method `index' for #<View:0x007f894bd997d0> (NoMethodError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:7:in `mostrar_menu': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb bienvenidos 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:21:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+
+ "Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 1
+-bash: 1: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:19:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:19:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:19:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets': No such file or directory @ rb_sysopen - mostrar_menu (Errno::ENOENT)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `gets'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:17:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 2
+-bash: 2: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 2
+-bash: 2: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 3
+-bash: 3: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 2
+-bash: 2: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 1
+-bash: 1: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 1
+-bash: 1: command not found
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:6:in `initialize': wrong number of arguments (given 0, expected 1) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:3:in `new'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:3:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+^L^L/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:6:in `initialize': wrong number of arguments (given 0, expected 1) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:3:in `new'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:3:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:6:in `initialize': wrong number of arguments (given 0, expected 1) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:3:in `new'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:3:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+/Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `mostrar_menu': undefined method `self' for #<View:0x007ff64bbc25e8> (NoMethodError)
+Did you mean?  itself
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:10:in `mostrar_menu': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+/Users/codea_mac_11/Desktop/fase01/flight/app/views/view.rb:10:in `mostrar_menu': wrong number of arguments (given 1, expected 0) (ArgumentError)
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:20:in `mostrar_menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:11:in `menu'
+	from /Users/codea_mac_11/Desktop/fase01/flight/app/controllers/controller.rb:4:in `initialize'
+	from flight.rb:3:in `new'
+	from flight.rb:3:in `<main>'
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ ruby flight.rb mostrar_menu
+"Bienvenido a Vuelos Codea"
+"--------------------------------------------------"
+"1) Reservaciones"
+"2) Administrador"
+"3) Salir"
+Selecciona opción:
+CodeaCamp11s-Mac-mini:flight codea_mac_11$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
